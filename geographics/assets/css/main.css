@@ -3,7 +3,35 @@ body {
 	font-size: 32px;
 }
 
-a {
-	color:red;
+.container {
+	display: flex; 
+	flex-wrap: wrap;
 }
+
+.location { 
+	width: 75%;
+	margin: auto;
+	text-align: center;
+}
+
+.item { 
+	width: 25%;
+}
+
+.item.large { 
+	width: 75%;
+}
+
+.item img { 
+width: 100%;
+}
+
+.mt-100 { 
+	margin-top: 100px;
+}
+
+.ml-75 { 
+	margin-left: 75%;
+}
+
 
