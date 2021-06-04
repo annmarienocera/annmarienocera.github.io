@@ -8,7 +8,52 @@ body {
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
-	font-family:;
+}
+
+.buy {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	background-color: blueviolet;
+	position: fixed;
+	top: 0;
+	left: 0;
+	mix-blend-mode: exclusion;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: move 12s linear alternate infinite;
+}
+
+.buy:hover {
+	animation-play-state: paused;
+}
+
+@keyframes move {
+	0% {
+		top: 0%;
+		left: 0%;
+	15% {
+		top: 15%;
+		left: 85%;
+	}
+	}
+	25% {
+		top: 25%;
+		left: 50%;
+	}
+	50% {
+		top: 100%;
+		left: 75%;
+	}
+	75% { 
+		top: 50%;
+		left: 100%;
+	}
+	100% {
+		top: 75%;
+		left: 25%;
+	}
 }
 
 .ad {
@@ -46,4 +91,11 @@ body {
 
   .mirror { 
 	  background-image: url("background/Mirror\ background\ .png");
+  }
+
+  .info {
+	  margin-top: 100px;
+	  margin-bottom: 100px;
+	  background-color: rgb(55, 27, 212);
+	  padding: 50px;
   }
